@@ -222,9 +222,7 @@ a {
     .parallax-hero {
         background-image: url("./images/vitrina-10.jpg");
         min-height: 500px;
-        background-position: bottom;
-        background-size: cover;
-        opacity: 0.8; 
+              
     }
 }
 /* GRIDS */
@@ -408,7 +406,7 @@ a {
     background-image: url("./images/vinciatti-calle.png");
   
     /* Set a specific height */
-    min-height: 300px;
+    min-height: 400px;
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -587,7 +585,7 @@ footer {
 
 .parallax {
     /* The image used */
-    background-image: url("./images/AMIGOS.jpg");
+    background-image: url("./images/amigos.jpg");
   
     /* Set a specific height */
     min-height: 700px;
@@ -638,7 +636,7 @@ footer {
     background-image: url("./images/sabores-vinciatti.png");
   
     /* Set a specific height */
-    min-height: 500px;
+    min-height: 400px;
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -876,10 +874,7 @@ display: block
   @media screen and (max-width:810px) {
     .parallax4 {
         background-image: url("./images/litro-y-medio.jpg");
-        background-attachment: fixed;
-        opacity: 0.8;
-
-      }
+       }
   }
 
 
