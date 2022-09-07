@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vinciatti</title>
+    <title>Vinciatti | Menu</title>
     <link rel="shortcut icon" href="../images/vinciatti-logo-cono.png" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,6 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body class="body__background">
     <header class="header" id="header">
@@ -53,7 +54,8 @@
 
     
       <div class="opciones">
-        <div class="menu_opciones" id="menu_sabores">
+        <div class="menu_opciones" id="menu_sabores" data-aos="zoom-in"
+        data-aos-duration="1000">
           <img
             class="img__sabores"
             src="../images/gelato-vinciatti.jpg"
@@ -61,7 +63,8 @@
           />
           <p class="menu__p">Nuestros Gelatos</p>
         </div>
-        <div class="menu_opciones" id="menu_antojos">
+        <div class="menu_opciones" id="menu_antojos" data-aos="zoom-in"
+        data-aos-duration="1000">
           <img
             class="img__sabores"
             src="../images/cookies.jpg"
@@ -69,7 +72,8 @@
           />
           <p class="menu__p">Antojos</p>
         </div>
-        <div class="menu_opciones" id="menu_bebidas">
+        <div class="menu_opciones" id="menu_bebidas" data-aos="zoom-in"
+        data-aos-duration="1000">
           <img
             class="img__sabores"
             src="../images/batidos.jpg"
@@ -264,7 +268,8 @@
         </p>
       </div>
       <div class=" opciones__antojos">
-        <div class="menu_opciones" id="menu_brownie">
+        <div class="menu_opciones" id="menu_brownie" data-aos="zoom-in"
+        data-aos-duration="1000">
           <img
             class="img__sabores"
             src="../images/brownie-con-helado.jpg"
@@ -272,7 +277,8 @@
           />
           <p class="menu__p--negro">Brownie con Helado</p>
         </div>
-        <div class="menu_opciones" id="menu_pandebonitos">
+        <div class="menu_opciones" id="menu_pandebonitos" data-aos="zoom-in"
+        data-aos-duration="1000">
           <img
             class="img__sabores"
             src="../images/pand.jpg"
@@ -280,7 +286,8 @@
           />
           <p class="menu__p--negro">Pandebonitos</p>
         </div>
-        <div class="menu_opciones" id="menu_croissant">
+        <div class="menu_opciones" id="menu_croissant" data-aos="zoom-in"
+        data-aos-duration="1000">
           <img
             class="img__sabores"
             src="../images/croissant(1).jpg"
@@ -314,8 +321,9 @@
       </div>
 
       <section>
-        <div class="opciones opciones__bebidas">
-          <div class="menu_opciones" id="menu_sabores">
+        <div class="opciones opciones__bebidas" >
+          <div class="menu_opciones" id="menu_sabores" data-aos="zoom-in"
+          data-aos-duration="1000">
             <img
               class="img__sabores"
               src="../images/vaso-cafe-vinciatti.png"
@@ -323,7 +331,8 @@
             />
             <p class="menu__p">Café</p>
           </div>
-          <div class="menu_opciones" id="menu_antojos">
+          <div class="menu_opciones" id="menu_antojos" data-aos="zoom-in"
+          data-aos-duration="1000">
             <img
               class="img__sabores"
               src="../images/granizados(2).jpg"
@@ -331,7 +340,8 @@
             />
             <p class="menu__p">Granizados</p>
           </div>
-          <div class="menu_opciones" id="menu_bebidas">
+          <div class="menu_opciones" id="menu_bebidas" data-aos="zoom-in"
+          data-aos-duration="1000">
             <img
               class="img__sabores"
               src="../images/jum.jpg"
@@ -375,5 +385,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>  
   </body>
 </html>

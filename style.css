@@ -63,10 +63,7 @@ p {
 
 /* NAV */
 
-.header {
-    position: sticky;
-    top: 0;
-}
+
 nav ul li {
     display: inline-block;
     
@@ -408,7 +405,7 @@ a {
     background-image: url("./images/vinciatti-calle.png");
   
     /* Set a specific height */
-    min-height: 300px;
+    min-height: 400px;
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -587,7 +584,7 @@ footer {
 
 .parallax {
     /* The image used */
-    background-image: url("./images/AMIGOS.jpg");
+    background-image: url("./images/amigos.jpg");
   
     /* Set a specific height */
     min-height: 700px;
@@ -959,4 +956,7 @@ display: block
     height: 80px;
     padding: 2rem;
 }
-
+.redes:hover {
+   transform:  rotate(25deg);
+   transition: 0.5s;
+}
