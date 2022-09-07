@@ -63,10 +63,7 @@ p {
 
 /* NAV */
 
-.header {
-    position: sticky;
-    top: 0;
-}
+
 nav ul li {
     display: inline-block;
     
@@ -954,4 +951,7 @@ display: block
     height: 80px;
     padding: 2rem;
 }
-
+.redes:hover {
+   transform:  rotate(25deg);
+   transition: 0.5s;
+}

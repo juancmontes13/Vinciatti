@@ -4,7 +4,7 @@
     <met a charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vinciatti</title>
+    <title>Vinciatti Gelateria</title>
     <link rel="shortcut icon" href="./images/vinciatti-logo-cono.png" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,6 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header" id="header">
@@ -45,8 +46,8 @@
       </nav>
     </header>
     <section><div class="parallax-hero"></div></section>
-    <div class="logo__img">
-      <img class="logo--largo" src="./images/asset1.png" alt="" />
+    <div class="logo__img" data-aos="zoom-in" data-aos-duration="1500">
+      <img class="logo--largo" src="./images/asset1.png" alt="Logo Vinciatti" />
     </div>
 
     <section class="quienesSomos" id="quienes-somos">
@@ -76,16 +77,28 @@
         <h2 class="menu__h2">Menú</h2>
       </div>
       <div class="menu__images">
-        <div class="conos__menu uno">
+        <div
+          class="conos__menu uno"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
           <img
             src="./images/medio-litro+brownie.jpg"
             alt="gelato de ferrero vinciatti"
           />
         </div>
-        <div class="conos__menu dos">
+        <div
+          class="conos__menu dos"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
           <img src="./images/cono-fresa.jpg" alt="cono fresa vinciatti" />
         </div>
-        <div class="conos__menu tres">
+        <div
+          class="conos__menu tres"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
           <img src="./images/litro-y-medio.jpg" alt="cono helado rosado" />
         </div>
       </div>
@@ -104,7 +117,11 @@
           >Domicilios</a
         >
       </div>
-      <div class="container__domi">
+      <div
+        class="container__domi"
+        data-aos="fade-left"
+        data-aos-duration="1500"
+      >
         <img
           class="domi"
           src="./images/vespabyn.png"
@@ -117,7 +134,11 @@
     <section class="donde_estamos">
       <div><h2 class="dondeEstamos__h2">Donde Estamos</h2></div>
       <div class="container__dondeEstamos">
-        <div class="dondeEstamos__mapa">
+        <div
+          class="dondeEstamos__mapa"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
           <img
             class="img__donde"
             src="./images/snickersyraffaello.jpg"
@@ -207,5 +228,9 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
