@@ -26,25 +26,37 @@ body {
     font-size: 2rem;
     line-height: 1.5;
     font-weight: 600;
+    background-image:url(./images/wickedbackground.png);
 
 }
 
-.body_background{
-    background-image: url(./images/wickedbackground.png);
-}
+
 h1, h2, h3, h4, h5 {
     color: var(--color-headings);
     margin-bottom: 1rem;
     font-weight: 600;
 }
 h1 {
-    font-size: 5rem;
-    margin: 0;
+    font-size: 6rem;
+    margin: 7rem;
     color: #eeeeee;
+    display: block;
+    text-align: center;
+    text-decoration: underline;
 }
 h2 {
     font-size: 4rem;
     text-decoration:underline ;
+}
+@media screen and (max-width:810px) {
+    h2{
+        text-decoration: none;
+    }
+    h1{
+        text-decoration: none;
+        margin-bottom: 0;
+    }
+    
 }
 h3 {
     font-size: 3rem;
@@ -110,7 +122,15 @@ nav a:hover {
     color: #C9C5EA;
        
 }
-
+.margen{
+    margin : 0 2rem 0 2rem;
+}
+.ancla{
+    margin-right: 1.5rem;
+}
+.nav-direction{
+    justify-content: flex-end;
+}
 .list__item {
     padding: 0 1.5rem;
     font-size: 1.5rem;
@@ -126,11 +146,14 @@ nav a:hover {
 }
 
 nav img {
-    width: 3rem;
+    
     height: 5rem;
-    padding: 1rem 2rem 0rem 7rem;
+    margin-left: 2rem;
+    
 }
-
+.hamburguesa{
+    margin-right: 2.5rem;
+}
 /* LINKS */
 
 a {
@@ -153,6 +176,9 @@ a {
 }
 .link-arrow:hover::after {
     margin-left: 20px;
+    }
+.link-arrow:hover{
+    color: darkgrey;
 }
 .link__menu {
     padding-top: 5rem;
@@ -185,7 +211,7 @@ a {
 .logo__img {
    
     display: flex;
-    height: 150px;
+    height: 250px;
     padding-top: 7rem;
     padding-bottom: 4rem;
     justify-content: center;
@@ -463,6 +489,41 @@ a {
     width: 350px;
 }
 }
+/* WHAT'S ON SECTION*/
+.whats-on{
+    background-color: #C9C5EA;
+}
+.wo__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0 5rem 0;
+}
+.wo__p{
+    color: #25252b;
+    margin: 5rem 2rem 5rem 2rem;
+    font-size: 3rem;
+    text-align: center;
+}
+.h2-wo{
+    color: #25252b;
+}
+.instagram-post{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 8rem;
+    flex-wrap: wrap;
+    
+}
+@media screen and (max-width:900px) {
+    .instagram-post{
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
 
 /* CONTACTANOS */
 
@@ -471,7 +532,6 @@ a {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content:center;
-    width: 300px;
     border: none;
    
 }
@@ -481,11 +541,12 @@ a {
     justify-content: center;
     padding-top: 7rem;
     background-color:#EBF1A9 ;
+    font-size: 1.5rem
 }
 
 .legend {
     font-size: 4rem;
-    padding-left: 2.5rem;
+    text-align: center;
     
 }
 
@@ -517,13 +578,14 @@ a {
 
 }
 .btn {
-    padding: 0.7rem;
+    padding: 1rem;
     margin: 1rem;
     background-color: #25252b;
     color: #ffffff;
     font-family: 'Lora', serif;
     font-weight: 600;
     font-style: italic;
+    font-size: 1.5rem;
     border-radius: 99rem;
     border: 0 solid;
 
@@ -582,7 +644,7 @@ footer {
 
 .parallax {
     /* The image used */
-    background-image: url("./images/cinco-sabores.jpg");
+    background-image: url("./images/amigos2.jpg");
   
     /* Set a specific height */
     min-height: 700px;
@@ -590,7 +652,7 @@ footer {
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     background-size: cover;
   }
 @media screen and (max-width:810px){
@@ -874,7 +936,29 @@ display: block
        }
   }
 
+.h5-direccion {
+    color: #25252b;
+}
+.btn-direccion {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #25252b;
+    color: #ffffff;
+    font-family:'lora', serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 2rem;
+    border-radius: 99rem;
+    border: 0 solid;
 
+
+}
+
+.btn-direccion:hover {
+    background-color:#EBF1A9;
+    color: #25252b;
+
+}
 #dondeEstamos__section{
     padding-bottom: 10rem;
 }
@@ -947,8 +1031,8 @@ display: block
     
 }
 .redes-logo {
-    width: 55px;
-    height: 80px;
+    width: 85px;
+    
     padding: 2rem;
 }
 .redes:hover {
