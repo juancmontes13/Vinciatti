@@ -224,10 +224,18 @@ a {
 }
 @media screen and (max-width: 576px) {
     .logo__img {
-        height: 90px;
+        height: 180px;
     }
 } 
-
+.vitrina-mobile {
+    display: none;
+}
+@media screen and (max-width: 810px) {
+    .vitrina-mobile{
+        display:flex;
+        width: 100%;
+    }
+}
 .parallax-hero {
     /* The image used */
     background-image: url("./images/vinciatti-city.png");
@@ -240,11 +248,11 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
+    overflow: hidden;
   }
 @media screen and (max-width: 810px) {
     .parallax-hero {
-        background-image: url("./images/vitrina-10.jpg");
-        min-height: 500px;
+       display: none;
               
     }
 }
@@ -371,7 +379,7 @@ a {
 }
 }
 @media screen and (max-width:960px){
-    .uno{
+    .uno {
         display: none;
     }
 }
@@ -620,6 +628,9 @@ footer {
 }
 .copy__menu {
     color: #25252b;
+}
+.copy__image{
+    width: 120px;
 }
 
 @media screen and (max-width:768px){
@@ -930,9 +941,10 @@ display: block
     background-repeat: no-repeat;
     background-size: cover;
   }
-  @media screen and (max-width:810px) {
+  @media screen and (max-width:810px) { 
     .parallax4 {
         background-image: url("./images/litro-y-medio.jpg");
+        min-height: 700px;
        }
   }
 
@@ -965,7 +977,9 @@ display: block
 .h3__tulua{
     padding: 2rem;
 }
-
+.p__donde{
+    font-size: 1.5rem;
+}
 .container__donde {
        display: flex;
        justify-content: space-evenly;
