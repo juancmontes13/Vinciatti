@@ -216,12 +216,7 @@ a {
     padding-bottom: 4rem;
     justify-content: center;
 }
-@media screen and (max-width: 768px) {
-    .logo__largo {
-    height: 100%;
-    width: 100%;  
-    }
-}
+
 @media screen and (max-width: 576px) {
     .logo__img {
         height: 180px;
