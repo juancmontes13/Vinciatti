@@ -252,8 +252,8 @@ a {
   }
 @media screen and (max-width: 810px) {
     .parallax-hero {
-       display: none;
-              
+       background-image: url(./images/vaso-vinciatti-donde.jpg);
+       min-height: 700px;    
     }
 }
 /* GRIDS */
@@ -459,7 +459,9 @@ a {
     align-items:center;
        
 }
-
+.carrusel_tamaño{
+    max-width: 499px;
+}
 .dondeEstamos__ciudades {
     
     display: flex;
