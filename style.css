@@ -17,7 +17,7 @@
 
 html {
     font-size: 62.5%;
-    background-image: url(./images/wickedbackground.png);
+    scroll-behavior:smooth;
 }
 body {
     font-family: 'Lora', serif;
@@ -55,6 +55,7 @@ h2 {
     h1{
         text-decoration: none;
         margin-bottom: 0;
+        font-size: 4rem;
     }
     
 }
@@ -78,7 +79,6 @@ p {
 
 nav ul li {
     display: inline-block;
-    
 }
 nav {
     display: flex;
@@ -109,7 +109,7 @@ nav {
         flex-direction: row;
         justify-content: space-evenly;
         width:100vw;
-            }
+    }
 
 }      
 @media screen and (max-width: 565px){
@@ -208,49 +208,67 @@ a {
 
 /* Logo IMG */
 
+.div__no__parallax{
+    width: 100%;
+    height: 400px;
+    background-image: url(./images/textura.jpg);
+    background-size: cover;
+    background-position: center;
+}
+@media screen and (max-width:700px) {
+    .div__no__parallax{
+        display: none;
+    }
+}
+    
 .logo__img {
    
     display: flex;
-    height: 250px;
+    flex-direction: column;
     padding-top: 7rem;
-    padding-bottom: 4rem;
+    padding-bottom: 7rem;
     justify-content: center;
+    align-items: center;
+    
 }
-
-@media screen and (max-width: 576px) {
+.cabecera__logo{
+    display: flex;
+    height: 200px;
+    padding: 4rem;    
+}
+.h2__cabecera{
+  text-align: center;
+  margin: 4rem;
+}
+@media screen and (max-width: 502px) {
     .logo__img {
-        height: 180px;
+        text-align: center;
+        padding-bottom: 0;
+    }
+    .h2__cabecera {
+        font-size: 4.5rem;
+        margin-bottom: 15rem;
+    }
+    .cabecera__logo{
+        width: 100%;
+        height: auto;
+    }
+    .div__no__parallax{
+        height: 200px;
+    }  
+} 
+@media screen and (max-width: 800px) {
+    .logo__img {
+        text-align: center;
+    }
+   
+    .cabecera__logo {
+        min-height: 100px;
+        margin-bottom: 3rem;
     }
 } 
-.vitrina-mobile {
-    display: none;
-}
-@media screen and (max-width: 810px) {
-    .vitrina-mobile{
-        display:flex;
-        width: 100%;
-    }
-}
-.parallax-hero {
-    /* The image used */
-    background-image: url("./images/vinciatti-city.png");
-  
-    /* Set a specific height */
-    min-height: 700px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    overflow: hidden;
-  }
-@media screen and (max-width: 810px) {
-    .parallax-hero {
-       background-image: url(./images/vaso-vinciatti-donde.jpg);
-       min-height: 700px;    
-    }
-}
+
+
 /* GRIDS */
 
 .grid {
@@ -273,7 +291,7 @@ a {
 /* QUIENES SOMOS SECTION */
 
 .quienesSomos{
-    clip-path: polygon(0% 0%, 100% 0%, 100% 89%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
 
 }
 @media screen and (max-width: 986px) {
@@ -427,19 +445,13 @@ a {
 }
 /* DONDE ESTAMOS */
 
-.parallax__donde {
-    /* The image used */
-    background-image: url("./images/vinciatti-calle.png");
-  
-    /* Set a specific height */
-    min-height: 400px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+.where__img{
+    width: 100%;
+    height: 450px;
+    background-image: url(./images/vinciatti-calle.png);
     background-size: cover;
-  }
+    background-position: center;
+}
   
 .dondeEstamos__h2 {
     display: flex;
@@ -497,13 +509,20 @@ a {
 /* WHAT'S ON SECTION*/
 .whats-on{
     background-color: #C9C5EA;
+    clip-path: polygon(0% 0%, 100% 4%, 100% 100%, 0% 100%);
 }
+@media screen and (max-width: 986px) {
+    .whats-on {
+        clip-path: polygon(0% 0%, 100% 1%, 100% 100%, 0% 100%);
+}
+}
+    
 .wo__text{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5rem 0 5rem 0;
+    padding: 15rem 0 5rem 0;
 }
 .wo__p{
     color: #25252b;
@@ -650,24 +669,14 @@ footer {
 /* MENU PAGE*/
 
 
-.parallax {
-    /* The image used */
-    background-image: url("./images/amigos2.jpg");
-  
-    /* Set a specific height */
-    min-height: 700px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat; 
+.menu__img {
+    border: 1px solid red;
+    width: 100%;
+    height: 500px;
+    background-image: url(./images/amigos2.jpg);
     background-size: cover;
-  }
-@media screen and (max-width:810px){
-    .parallax {
-        min-height: 500px;     
-      }
-    }
+    background-position: center;
+}
 
   .section__opciones{
     margin: 5rem 0 5rem 0;
@@ -698,22 +707,29 @@ footer {
     height: 500px;
     overflow-x: hidden;
 }
-.parallax2 {
-    /* The image used */
-    background-image: url("./images/sabores-vinciatti.png");
-  
-    /* Set a specific height */
-    min-height: 400px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+.img__menu_noparallax{
+    width: 100%;
+    height: 400px;
+    background-image: url(./images/sabores-vinciatti.png);
     background-size: cover;
-  }
+    background-position: top;
+}
 
-
-  #menu_nuestros-sabores {
+.img_antojos_noparallax {
+    width: 100%;
+    height: 400px;
+    background-image: url(./images/cinnamon-rolls.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img_donde__noparallax {
+    width: 100%;
+    height: 400px;
+    background-image: url(./images/vinciatti-city.png);
+    background-size: cover;
+    background-position: center;
+}
+#menu_nuestros-sabores {
     display: flex;
     justify-content: center;
     padding-top: 5rem;
@@ -821,26 +837,11 @@ footer {
     padding: 4rem;
     display: flex;
     justify-content: center;
-    
 }
-.parallax3 {
-    background-image: url("./images/cinnamon-rolls.jpg");
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-  }
-@media screen and (max-width: 810px) {
-    .parallax3{
-        min-height: 300px;
-    }
-}  
 
   /* Section Menu Antojos */ 
 
-  #section__menu_antojos{
+#section__menu_antojos{
     display: flex;
     justify-content: space-evenly;
   }
@@ -930,21 +931,10 @@ display: block
 /* DONDE ESTAMOS PAGE */
 
 
-.parallax4 {
-    background-image: url("./images/textura.jpg");
-    min-height: 400px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  @media screen and (max-width:810px) { 
-    .parallax4 {
-        background-image: url("./images/litro-y-medio.jpg");
-        min-height: 700px;
-       }
-  }
 
+.h2__cabecera__donde{
+    color: white;
+}
 .h5-direccion {
     color: #25252b;
 }
@@ -976,7 +966,14 @@ display: block
 }
 .p__donde{
     font-size: 1.5rem;
+    margin-top: 3rem;
+    text-align: left;
 }
+
+.cuatro-imagenes {
+margin-top: 5rem;
+}
+ 
 .container__donde {
        display: flex;
        justify-content: space-evenly;
