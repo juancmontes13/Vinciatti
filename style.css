@@ -281,7 +281,7 @@ a {
 }
 @media screen and (max-width: 986px) {
     .grid__hero--1x2 {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
